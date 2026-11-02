@@ -1,0 +1,44 @@
+.item,
+.itemDone {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0;
+  padding: 10px 8px 10px 12px;
+  border-radius: 14px;
+  list-style: none;
+  transition: background-color 0.2s ease;
+}
+
+.item:hover,
+.itemDone:hover {
+  background: rgba(111, 91, 69, 0.08);
+}
+
+.itemDone {
+  background: rgba(111, 91, 69, 0.05);
+}
+
+.check {
+  flex: 1;
+  min-width: 0;
+  align-items: flex-start;
+}
+
+.check :global(.ant-checkbox) {
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.title,
+.titleDone {
+  display: inline-block;
+  overflow-wrap: anywhere;
+  line-height: 1.45;
+  color: #2b241c;
+}
+
+.titleDone {
+  color: rgba(43, 36, 28, 0.45);
+  text-decoration: line-through;
+}

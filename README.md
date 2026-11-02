@@ -1,16 +1,27 @@
-# React + Vite
+Привет дорогой читатель! Если ты видишь этот текст значит ты добрался до моего небольшого проекта. 
+Прежде чем ты начнешь изучать код и клацать по кнопочкам, хочу немного рассказать о себе и о проекте . 
+Проект — это простой приложение, которое позволяет создавать списки задач, отмечать их выполненными, удалять их и фильтруеться по состоянию. Подобные таск менеджер можно реализовать на любой вкус и допиливать его разми фичами очень долго (драг колонок и задач, групировка задач) . Я реализовал по ТЗ простое и быстрое приложение . Руки конечно чешуть провести в коде еще пару часов и сделать еще красивее, но надо сдерживаться. Надеюсь, дорогой друг, тут ты найдешь то что искал.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Список задач
 
-Currently, two official plugins are available:
+Небольшое приложение на React, TypeScript и Vite: задачи добавляются, отмечаются выполненными, удаляются и фильтруются. Список хранится в `localStorage` и остаётся после обновления страницы.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Интерфейс собран на Ant Design, иконки — из `@ant-design/icons`. Код разложен по слоям Feature-Sliced Design: `app`, `pages`, `widgets`, `features`, `entities`, `shared`.
 
-## React Compiler
+## Запуск
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Сборка и проверка:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run build
+npm run lint
+```
+
+## Время
+
+
