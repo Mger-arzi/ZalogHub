@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.field {
+  flex: 1;
+  min-width: 0;
+}
+
+.error {
+  min-height: calc(13px * 1.4);
+  margin: 6px 0 0;
+  color: #a33b32;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.submit {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 520px) {
+  .form {
+    flex-direction: column;
+  }
+
+  .submit {
+    width: 100%;
+  }
+}

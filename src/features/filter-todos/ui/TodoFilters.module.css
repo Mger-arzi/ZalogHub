@@ -1,0 +1,27 @@
+.filters {
+  width: 100%;
+  min-width: 0;
+}
+
+.filters :global(.ant-segmented-item-label) {
+  min-height: 32px;
+  white-space: nowrap;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.count {
+  min-width: 1.5rem;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: rgba(111, 91, 69, 0.12);
+  color: #5c4b38;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  line-height: 18px;
+  text-align: center;
+}
